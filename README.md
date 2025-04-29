@@ -21,6 +21,6 @@ The goal of this demo is to:
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/your-username/interaction-design-demo.git
-   cd interaction-design-demo
+   git clone git@github.com:Lincerossa/catalyst.git
+   cd catalyst
    ```
