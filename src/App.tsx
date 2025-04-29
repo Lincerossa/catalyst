@@ -1,35 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { ParallaxSection } from './components/ParallaxSection';
+import { AnimatedContent } from './components/AnimatedContent';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className='min-h-screen bg-gray-800'>
+      <div className='bg-gradient-to-b from-gray-800 bg-blue-500 h-screen flex items-center justify-center'>
+        <h1 className='text-4xl font-bold text-white '>
+          Scroll down for parallax effect at the end
+        </h1>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+
+      <ParallaxSection speed={0} className='h-screen bg-blue-500'>
+        Industrial
+      </ParallaxSection>
+
+      <AnimatedContent className='bg-gradient-to-b from-blue-500 to-green-500' />
+
+      <ParallaxSection speed={0} className='h-screen bg-green-500'>
+        Animations
+      </ParallaxSection>
+
+      <AnimatedContent className='bg-gradient-to-b from-green-500 to-purple-500' />
+
+      <ParallaxSection speed={50} className='h-screen bg-purple-500'>
+        Parallax Effect
+      </ParallaxSection>
+    </div>
+  );
 }
 
-export default App
+export default App;
