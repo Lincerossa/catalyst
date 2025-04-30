@@ -1,6 +1,8 @@
 # Interaction Design Demo
 
-This project is a **demo and experiment in interaction design**, focusing on the use of **motion, Vite, and Tailwind CSS** to create smooth, responsive, and modern user experiences.
+https://6810cffa9d978968a2be799c--windsurf-catalyst.netlify.app/
+
+This project is a **demo and experiment in interaction design using ai**, focusing on the use of **motion, Vite, and Tailwind CSS** to create smooth, responsive, and modern user experiences.
 
 ## 🌀 Purpose
 
